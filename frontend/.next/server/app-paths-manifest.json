@@ -1,0 +1,5 @@
+{
+  "/page": "app/page.js",
+  "/(page)/vc-office/page": "app/(page)/vc-office/page.js",
+  "/(page)/news/all/page": "app/(page)/news/all/page.js"
+}
