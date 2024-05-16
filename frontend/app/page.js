@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div className="relative h-screen mb-96">
         <Hero />
-        <div className="absolute top-[530px] w-full">
+        <div className="absolute bottom-[-100px] tp-[530px] w-full">
           <MessageFromVC />
         </div>
       </div>

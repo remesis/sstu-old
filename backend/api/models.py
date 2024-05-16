@@ -110,3 +110,21 @@ class Teacher(models.Model):
 
     def __str__(self):
         return self.name or "Unnamed Teacher"
+
+class Research(models.Model):
+    user = models.ForeignKey(User, related_name='research', on_delete=models.CASCADE, null=True, blank=True)
+    title = models.CharField(max_length=100, null=True, blank=True)
+    # description = models.TextField(null=True, blank=True)
+    authors = models.CharField(max_length=100, null=True, blank=True)
+    isJournal = models.BooleanField(default=True)
+    # if false: conference
+    j_name = models.CharField(max_length=100, null=True, blank=True)
+    year = models.CharField(max_length=100, null=True, blank=True)
+    volume = models.CharField(max_length=100, null=True, blank=True)
+    doi = models.CharField(max_length=100, null=True, blank=True)
+
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
+
+    def __str__(self):
+        return self.title or "Untitled Research"
