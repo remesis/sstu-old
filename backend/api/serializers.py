@@ -58,15 +58,23 @@ class EducationSerializer(serializers.ModelSerializer):
         model = Education
         fields = '__all__'
 
+
+class ResearchSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Research
+        fields = '__all__'
+
 class TeacherSerializer(serializers.ModelSerializer):
     username = serializers.ReadOnlyField(source='user.username')
     work = WorkSerializer(many=True, read_only=True)
     education = EducationSerializer(many=True, read_only=True)
+    research = ResearchSerializer(many=True, read_only=True)
 
     class Meta:
         model = Teacher
         fields = [
             'work',
+            'research',
             'education',
             'username',
             'name',

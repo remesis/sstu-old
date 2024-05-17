@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Card, CardHeader, CardBody, CardFooter, Typography, Button } from "@material-tailwind/react";
 
@@ -30,6 +30,26 @@ function CardItem({ title, description, date, image }) {
 }
 
 const LatestNotice = () => {
+  const [allNotice, setAllNotice] = useState([]);
+
+  useEffect(() => {
+    fetchNotices();
+  }, []);
+
+  const fetchNotices = async () => {
+    try {
+      const response = await fetch(`http://192.168.0.101:8000/api/notice/`);
+      if (!response.ok) {
+        throw new Error(`API request failed with status ${response.status}`);
+      }
+      const data = await response.json();
+      console.log(data);
+      setAllNotice(data);
+    } catch (error) {
+      console.error("Error fetching notice data:", error);
+    }
+  };
+
   return (
     <div className="container mx-auto">
       <Typography className="flex gap-x-2 mb-5 items-center">
@@ -39,9 +59,12 @@ const LatestNotice = () => {
         </div>
       </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-1">
+        {allNotice.map((notice) => (
+          <CardItem key={notice.id} title={notice.title} description={notice.content} date={notice.date} image={notice.image} />
+        ))}
+        {/* <CardItem title={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} description={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} date={"2024-1-11"} image={"notice.png"} />
         <CardItem title={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} description={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} date={"2024-1-11"} image={"notice.png"} />
-        <CardItem title={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} description={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} date={"2024-1-11"} image={"notice.png"} />
-        <CardItem title={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} description={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} date={"2024-1-11"} image={"notice.png"} />
+        <CardItem title={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} description={"স্মারক নং ৪৩৭ঃ নির্বাহী প্রকৌশলী (পেপার)"} date={"2024-1-11"} image={"notice.png"} /> */}
       </div>
     </div>
   );

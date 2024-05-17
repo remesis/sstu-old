@@ -1,5 +1,6 @@
 {
   "/page": "app/page.js",
-  "/(page)/vc-office/page": "app/(page)/vc-office/page.js",
-  "/(page)/news/all/page": "app/(page)/news/all/page.js"
+  "/(page)/department/cse/page": "app/(page)/department/cse/page.js",
+  "/(page)/teachers/view/[username]/page": "app/(page)/teachers/view/[username]/page.js",
+  "/(page)/notice/view/[slug]/page": "app/(page)/notice/view/[slug]/page.js"
 }

@@ -8,7 +8,12 @@ const PageLayout = ({ title, bg, children, style }) => {
   }
   return (
     <div className="min-h-screen">
-      <div className="text-white font-bold text-4xl text-center" style={{ backgroundImage: `url(${bg})` }}>
+      <div
+        className="text-white font-bold text-4xl text-center object-cover bg-no-repeat bg-cover bg-center relative"
+        style={{
+          backgroundImage: `url(${bg})`,
+        }}
+      >
         <div className="bg-black bg-opacity-45 pt-40 pb-40  h-52 ">{title}</div>
       </div>
       <div className={className}>{children}</div>

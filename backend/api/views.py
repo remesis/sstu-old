@@ -19,3 +19,26 @@ class TeacherViewSet(viewsets.ModelViewSet):
         return queryset
 
     
+
+class ResearchViewSet(viewsets.ModelViewSet):
+    queryset = Research.objects.all()
+    serializer_class = ResearchSerializer
+
+
+class NoticeViewSet(viewsets.ModelViewSet):
+    queryset = Notice.objects.all()
+    serializer_class = NoticeSerializer
+
+
+class NoticeByID(viewsets.ModelViewSet):
+    queryset = Notice.objects.all()
+    serializer_class = NoticeSerializer
+    lookup_field = 'pk'
+
+    def get_object(self):
+        notice_id = self.kwargs.get('pk')
+        print(notice_id)
+        queryset = self.get_queryset().get(pk=notice_id)
+        if queryset is None:
+            raise Http404("No Notice matches the given query.")
+        return queryset
