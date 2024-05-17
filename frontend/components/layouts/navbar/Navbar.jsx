@@ -27,32 +27,66 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`flex z-[999999999999] justify-between items-center py-3 fixed top-0 w-full ${scrolling ? "bg-white text-gray-900 shadow-md transition-all duration-300" : "bg-transparent text-white transition-all duration-300"}`}>
+    <div
+      className={`flex z-[999999999999] justify-between items-center py-3 fixed top-0 w-full ${
+        scrolling
+          ? "bg-white text-gray-900 shadow-md transition-all duration-300"
+          : "bg-transparent text-white transition-all duration-300"
+      }`}
+    >
       <div className="relative">
         <div className=" px-4 py-4 fixed top-[-10px] left-5 flex items-center justify-between gap-x-2">
           <Link href="/">
             <img src="/logo.png" alt="logo" width={100} />
           </Link>
         </div>
-        <div className="text-xl px-4 py-4 fixed top-[10px] left-[140px]">সুনামগঞ্জ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়</div>
+        <div className="text-xl px-4 py-4 fixed top-[10px] left-[140px]">
+          সুনামগঞ্জ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়
+        </div>
       </div>
       <ul className="flex flex-wrap justify-center items-center font-medium text-sm px-4">
         <li className="p-4 lg:px-2">
-          <Link className=" hover:text-green-500 transition-all duration-100 ease-in-out" href="/">
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="/"
+          >
             Home
           </Link>
         </li>
 
-        <li className="p-4 lg:px-2 relative flex items-center space-x-1" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-          <Link className=" hover:text-green-500 transition-all duration-100 ease-in-out" href="#0" aria-expanded={open}>
+        <li
+          className="p-4 lg:px-2 relative flex items-center space-x-1"
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={() => setOpen(false)}
+        >
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="#0"
+            aria-expanded={open}
+          >
             About SSTU
           </Link>
-          <button className="shrink-0 p-1" aria-expanded={open} onClick={() => setOpen(!open)}>
-            <CgChevronDown className={`w-4 h-4 ${scrolling ? "fill-slate-500" : "fill-slate-50"}`} />
+          <button
+            className="shrink-0 p-1"
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+            <CgChevronDown
+              className={`w-4 h-4 ${
+                scrolling ? "fill-slate-500" : "fill-slate-50"
+              }`}
+            />
           </button>
-          <ul className="origin-top-right absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden" style={{ display: open ? "block" : "none" }} onFocusOut={() => setOpen(false)}>
+          <ul
+            className="origin-top-right absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden"
+            style={{ display: open ? "block" : "none" }}
+            onFocusOut={() => setOpen(false)}
+          >
             <li>
-              <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+              <Link
+                className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                href="#"
+              >
                 <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                   <CgChevronDoubleRight className="fill-green-500" />
                 </div>
@@ -60,7 +94,10 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+              <Link
+                className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                href="#"
+              >
                 <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                   <CgChevronDoubleRight className="fill-green-500" />
                 </div>
@@ -68,7 +105,10 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+              <Link
+                className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                href="#"
+              >
                 <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                   <CgChevronDoubleRight className="fill-green-500" />
                 </div>
@@ -76,7 +116,10 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+              <Link
+                className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                href="#"
+              >
                 <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                   <CgChevronDoubleRight className="fill-green-500" />
                 </div>
@@ -84,7 +127,10 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+              <Link
+                className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                href="#"
+              >
                 <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                   <CgChevronDoubleRight className="fill-green-500" />
                 </div>
@@ -92,7 +138,10 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+              <Link
+                className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                href="#"
+              >
                 <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                   <CgChevronDoubleRight className="fill-green-500" />
                 </div>
@@ -100,7 +149,10 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+              <Link
+                className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                href="#"
+              >
                 <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                   <CgChevronDoubleRight className="fill-green-500" />
                 </div>
@@ -111,62 +163,114 @@ function Navbar() {
         </li>
 
         {/* Menu 2 */}
-        <li className="p-4 lg:px-2 relative flex items-center space-x-1" onMouseEnter={() => setOpen2(true)} onMouseLeave={() => setOpen2(false)}>
-          <Link className=" hover:text-green-500 transition-all duration-100 ease-in-out" href="#0" aria-expanded={open}>
+        <li
+          className="p-4 lg:px-2 relative flex items-center space-x-1"
+          onMouseEnter={() => setOpen2(true)}
+          onMouseLeave={() => setOpen2(false)}
+        >
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="#0"
+            aria-expanded={open}
+          >
             Administration
           </Link>
-          <button className="shrink-0 p-1" aria-expanded={open} onClick={() => setOpen2(!open)}>
-            <CgChevronDown className={`w-4 h-4 ${scrolling ? "fill-slate-500" : "fill-slate-50"}`} />
+          <button
+            className="shrink-0 p-1"
+            aria-expanded={open}
+            onClick={() => setOpen2(!open)}
+          >
+            <CgChevronDown
+              className={`w-4 h-4 ${
+                scrolling ? "fill-slate-500" : "fill-slate-50"
+              }`}
+            />
           </button>
-          <ul className="origin-top-left absolute top-full left-0 -translate-x-1/2 min-w-max bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden" style={{ display: open2 ? "block" : "none" }} onFocusOut={() => setOpen(false)}>
+          <ul
+            className="origin-top-left absolute top-full left-0 -translate-x-1/2 min-w-max bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden"
+            style={{ display: open2 ? "block" : "none" }}
+            onFocusOut={() => setOpen(false)}
+          >
             <div className="flex gap-x-3 p-4">
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">Statutory Office</p>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Statutory Office
+                </p>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="/vc-office">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="/office-of-vice-chancellor"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Vice Chancellor's Office</span>
+                    <span className="whitespace-nowrap">
+                      Vice Chancellor's Office
+                    </span>
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="/office-of-registrar"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Registrar's Office</span>
+                    <span className="whitespace-nowrap">
+                      Registrar's Office
+                    </span>
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Librarian's Office</span>
+                    <span className="whitespace-nowrap">
+                      Librarian's Office
+                    </span>
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Controller's Office</span>
+                    <span className="whitespace-nowrap">
+                      Controller's Office
+                    </span>
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Exam Controller's Office</span>
+                    <span className="whitespace-nowrap">
+                      Exam Controller's Office
+                    </span>
                   </Link>
                 </li>
               </div>
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">Authority</p>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Authority
+                </p>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="syndicatelist"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
@@ -174,7 +278,10 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
@@ -182,7 +289,10 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
@@ -190,39 +300,61 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Planning and Development Committee</span>
+                    <span className="whitespace-nowrap">
+                      Planning and Development Committee
+                    </span>
                   </Link>
                 </li>
               </div>
             </div>
             <div className="flex gap-x-3 p-4">
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">Office of the Deans</p>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Office of the Deans
+                </p>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Faculty of Science</span>
+                    <span className="whitespace-nowrap">
+                      Faculty of Science
+                    </span>
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Faculty of Engineering & Technology</span>
+                    <span className="whitespace-nowrap">
+                      Faculty of Engineering & Technology
+                    </span>
                   </Link>
                 </li>
               </div>
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">Office of the Directors</p>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Office of the Directors
+                </p>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
@@ -230,11 +362,16 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Research & Extension</span>
+                    <span className="whitespace-nowrap">
+                      Research & Extension
+                    </span>
                   </Link>
                 </li>
               </div>
@@ -242,51 +379,111 @@ function Navbar() {
           </ul>
         </li>
         {/* Menu 3 */}
-        <li className="p-4 lg:px-2 relative flex items-center space-x-1" onMouseEnter={() => setOpen3(true)} onMouseLeave={() => setOpen3(false)}>
-          <Link className=" hover:text-green-500 transition-all duration-100 ease-in-out" href="#0" aria-expanded={open}>
+        <li
+          className="p-4 lg:px-2 relative flex items-center space-x-1"
+          onMouseEnter={() => setOpen3(true)}
+          onMouseLeave={() => setOpen3(false)}
+        >
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="#0"
+            aria-expanded={open}
+          >
             Academics
           </Link>
-          <button className="shrink-0 p-1" aria-expanded={open} onClick={() => setOpen3(!open)}>
-            <CgChevronDown className={`w-4 h-4 ${scrolling ? "fill-slate-500" : "fill-slate-50"}`} />
+          <button
+            className="shrink-0 p-1"
+            aria-expanded={open}
+            onClick={() => setOpen3(!open)}
+          >
+            <CgChevronDown
+              className={`w-4 h-4 ${
+                scrolling ? "fill-slate-500" : "fill-slate-50"
+              }`}
+            />
           </button>
-          <ul className="origin-top-left absolute top-full left-0 -translate-x-1/2 min-w-max bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden" style={{ display: open3 ? "block" : "none" }} onFocusOut={() => setOpen(false)}>
-            <div className="flex flex-col gap-y-3 p-4">
+          <ul
+            className="origin-top-left absolute top-full left-0 -translate-x-1/2 min-w-max bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden"
+            style={{ display: open3 ? "block" : "none" }}
+            onFocusOut={() => setOpen(false)}
+          >
+            <div className="flex flex-col-reverse gap-y-3 p-4">
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">Faculty of Science</p>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Faculty of Science
+                </p>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Department of Mathematics</span>
+                    <span className="whitespace-nowrap">
+                      Department of Mathematics
+                    </span>
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Department of Physics</span>
+                    <span className="whitespace-nowrap">
+                      Department of Chemistry
+                    </span>
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Department of Chemistry</span>
+                    <span className="whitespace-nowrap">
+                      Department of Physics
+                    </span>
                   </Link>
                 </li>
               </div>
 
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">Faculty of Engineering & Technology</p>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Faculty of Engineering & Technology
+                </p>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="/department/cse">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Department of Computer Science & Engineering</span>
+                    <span className="whitespace-nowrap">
+                      Department of Computer Science & Engineering
+                    </span>
+                  </Link>
+                </li>
+              </div>
+              <div>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Programs
+                </p>
+                <li>
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
+                    <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
+                      <CgChevronDoubleRight className="fill-green-500" />
+                    </div>
+                    <span className="whitespace-nowrap">Undergraduate</span>
                   </Link>
                 </li>
               </div>
@@ -294,19 +491,44 @@ function Navbar() {
           </ul>
         </li>
         {/* Menu 4 */}
-        <li className="p-4 lg:px-2 relative flex items-center space-x-1" onMouseEnter={() => setOpen4(true)} onMouseLeave={() => setOpen4(false)}>
-          <Link className=" hover:text-green-500 transition-all duration-100 ease-in-out" href="#0" aria-expanded={open}>
+        <li
+          className="p-4 lg:px-2 relative flex items-center space-x-1"
+          onMouseEnter={() => setOpen4(true)}
+          onMouseLeave={() => setOpen4(false)}
+        >
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="#0"
+            aria-expanded={open}
+          >
             Admission
           </Link>
-          <button className="shrink-0 p-1" aria-expanded={open} onClick={() => setOpen4(!open)}>
-            <CgChevronDown className={`w-4 h-4 ${scrolling ? "fill-slate-500" : "fill-slate-50"}`} />
+          <button
+            className="shrink-0 p-1"
+            aria-expanded={open}
+            onClick={() => setOpen4(!open)}
+          >
+            <CgChevronDown
+              className={`w-4 h-4 ${
+                scrolling ? "fill-slate-500" : "fill-slate-50"
+              }`}
+            />
           </button>
-          <ul className="origin-top-left absolute top-full left-0 -translate-x-1/2 min-w-max bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden" style={{ display: open4 ? "block" : "none" }} onFocusOut={() => setOpen(false)}>
+          <ul
+            className="origin-top-left absolute top-full left-0 -translate-x-1/2 min-w-max bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden"
+            style={{ display: open4 ? "block" : "none" }}
+            onFocusOut={() => setOpen(false)}
+          >
             <div className="flex flex-col gap-y-3 p-4">
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">Undergraduate</p>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Undergraduate
+                </p>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
@@ -316,17 +538,27 @@ function Navbar() {
               </div>
 
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">International Students</p>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  International Students
+                </p>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
-                    <span className="whitespace-nowrap">Entry Requirements</span>
+                    <span className="whitespace-nowrap">
+                      Entry Requirements
+                    </span>
                   </Link>
                 </li>
                 <li>
-                  <Link className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2" href="#">
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="#"
+                  >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
@@ -338,17 +570,26 @@ function Navbar() {
           </ul>
         </li>
         <li className="p-4 lg:px-2">
-          <Link className=" hover:text-green-500 transition-all duration-100 ease-in-out" href="/contact-us">
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="/contact-us"
+          >
             Research
           </Link>
         </li>
         <li className="p-4 lg:px-2">
-          <Link className=" hover:text-green-500 transition-all duration-100 ease-in-out" href="/contact-us">
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="/contact-us"
+          >
             Notices
           </Link>
         </li>
         <li className="p-4 lg:px-2">
-          <Link className=" hover:text-green-500 transition-all duration-100 ease-in-out" href="/contact-us">
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="/contact-us"
+          >
             Contact Us
           </Link>
         </li>
