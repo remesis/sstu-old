@@ -520,9 +520,19 @@ function Navbar() {
           >
             <div className="flex flex-col gap-y-3 p-4">
               <div>
-                <p className="text-md font-bold mb-3 text-green-500">
+                {/* <p className="text-md font-bold mb-3 text-green-500">
                   Faculty of Science
-                </p>
+                </p> */}
+                <li>
+                  <Link
+                    className="text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="/department/science"
+                  >
+                    <p className="text-md font-bold mb-3 text-green-500">
+                      Faculty of Science
+                    </p>
+                  </Link>
+                </li>
                 <li>
                   <Link
                     className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
