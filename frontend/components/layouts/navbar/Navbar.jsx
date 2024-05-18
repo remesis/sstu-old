@@ -378,7 +378,7 @@ function Navbar() {
             </div>
           </ul>
         </li>
-        {/* Menu 3 */}
+        {/* Menu 3
         <li
           className="p-4 lg:px-2 relative flex items-center space-x-1"
           onMouseEnter={() => setOpen3(true)}
@@ -484,6 +484,101 @@ function Navbar() {
                       <CgChevronDoubleRight className="fill-green-500" />
                     </div>
                     <span className="whitespace-nowrap">Undergraduate</span>
+                  </Link>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </li> */}
+        <li
+          className="p-4 lg:px-2 relative flex items-center space-x-1"
+          onMouseEnter={() => setOpen3(true)}
+          onMouseLeave={() => setOpen3(false)}
+        >
+          <Link
+            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            href="#0"
+            aria-expanded={open}
+          >
+            Academics
+          </Link>
+          <button
+            className="shrink-0 p-1"
+            aria-expanded={open}
+            onClick={() => setOpen3(!open)}
+          >
+            <CgChevronDown
+              className={`w-4 h-4 ${
+                scrolling ? "fill-slate-500" : "fill-slate-50"
+              }`}
+            />
+          </button>
+          <ul
+            className="origin-top-left absolute top-full left-0 -translate-x-1/2 min-w-max bg-white text-gray-900 border border-slate-200 p-2 rounded-lg shadow-xl [x-cloak]:hidden"
+            style={{ display: open3 ? "block" : "none" }}
+            onFocusOut={() => setOpen(false)}
+          >
+            <div className="flex flex-col gap-y-3 p-4">
+              <div>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Faculty of Science
+                </p>
+                <li>
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="/department/mathematics"
+                  >
+                    <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
+                      <CgChevronDoubleRight className="fill-green-500" />
+                    </div>
+                    <span className="whitespace-nowrap">
+                      Department of Mathematics
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="/department/physics"
+                  >
+                    <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
+                      <CgChevronDoubleRight className="fill-green-500" />
+                    </div>
+                    <span className="whitespace-nowrap">
+                      Department of Physics
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="/department/chemistry"
+                  >
+                    <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
+                      <CgChevronDoubleRight className="fill-green-500" />
+                    </div>
+                    <span className="whitespace-nowrap">
+                      Department of Chemistry
+                    </span>
+                  </Link>
+                </li>
+              </div>
+
+              <div>
+                <p className="text-md font-bold mb-3 text-green-500">
+                  Faculty of Engineering & Technology
+                </p>
+                <li>
+                  <Link
+                    className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
+                    href="/department/cse"
+                  >
+                    <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
+                      <CgChevronDoubleRight className="fill-green-500" />
+                    </div>
+                    <span className="whitespace-nowrap">
+                      Department of Computer Science & Engineering
+                    </span>
                   </Link>
                 </li>
               </div>
