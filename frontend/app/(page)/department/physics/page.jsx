@@ -92,26 +92,30 @@ const page = () => {
   return (
     <PageLayout
       style={true}
-      title="Department Of Computer Science & Engineering"
-      bg="https://snu.edu.in/site/assets/files/14210/html-system-website-concept_1.1600x0.webp"
+      title="Department Of Physics"
+      bg="https://images.theconversation.com/files/279451/original/file-20190614-32361-zufjgi.jpg?ixlib=rb-4.1.0&rect=0%2C264%2C3600%2C2171&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip"
     >
       <div className=" p-8">
         <h2 className="text-3xl font-bold mb-4 text-gray-900">
           <div className="flex items-center">
             <div className="h-3 w-3 rounded-full bg-green-500 mr-5"></div>
-            <p> Goals and Objectives</p>
+            <p>Physics Amazes Us</p>
           </div>
         </h2>
         <p className="text-lg mb-6 text-gray-800">
           The{" "}
           <strong class="font-semibold text-gray-850 dark:text-white">
-            Department of Computer Science and Engineering
+            Department of Physics
           </strong>{" "}
-          strives to inspire excellence in the creation, application, and
-          dissemination of knowledge in computer science and engineering through
-          comprehensive educational programs; research in collaboration with
-          industry, NGOs, and government; diffusion through scholarly
-          publications, and service to the national and international community.
+          at Sunamgonj Science and Technology University is dedicated to
+          advancing scientific inquiry and discovery, exploring the fundamental
+          principles of the universe and unraveling the mysteries of the
+          physical world. Our mission extends to nurturing the next generation
+          of physicists, providing them with the knowledge and skills to push
+          the boundaries of human understanding. Through our commitment to
+          education and research, we strive to contribute to the continuous
+          expansion of human knowledge and inspire future generations of
+          scientists.
         </p>
 
         <h2 className="text-3xl font-bold mb-4 text-gray-900">
@@ -122,22 +126,21 @@ const page = () => {
         </h2>
         <ul className="list-disc pl-8 mb-6 text-gray-800">
           <li className="text-lg">
-            To educate students in the fundamental principles of computer
-            science and the cutting-edge skills needed to solve the complex
-            problems of society.
+            Instill a deep comprehension of physics fundamentals in students to
+            empower them in problem-solving across diverse fields.
           </li>
           <li className="text-lg">
-            To contribute to the development and progress of computer science,
-            and software and information technology, to provide innovative,
-            creative solutions for societal needs.
+            Lead the charge in advancing physics knowledge and research,
+            offering novel solutions to societal challenges.
           </li>
           <li className="text-lg">
-            To disseminate research through publications, public service, and
-            professional activities to impact society in a transformative way.
+            Share research breakthroughs through publications, public service,
+            and professional initiatives, driving meaningful societal
+            transformation.
           </li>
         </ul>
 
-        <h2 className="text-3xl font-bold mb-4 text-gray-900">
+        {/* <h2 className="text-3xl font-bold mb-4 text-gray-900">
           <div className="flex items-center">
             <div className="h-3 w-3 rounded-full bg-green-500 mr-5"></div>
             <p> Academic Programs</p>
@@ -155,18 +158,18 @@ const page = () => {
             Master of Engineering in Computer Science and Engineering
           </li>
           <li className="text-lg">Master in Computer Applications</li>
-        </ul>
-        <h2 className="text-3xl font-bold mb-4 text-gray-900">
+        </ul> */}
+        {/* <h2 className="text-3xl font-bold mb-4 text-gray-900">
           <div className="flex items-center">
             <div className="h-3 w-3 rounded-full bg-green-500 mr-5"></div>
             <p> Major Programs</p>
           </div>
         </h2>
         <ul className="list-disc pl-8 mb-6 text-gray-800">
-          <li className="text-lg">Software Engineering</li>
-          <li className="text-lg">Artificial Intelligence</li>
-          <li className="text-lg">Information and Technology</li>
-        </ul>
+          <li className="text-lg">Organic Chemistry</li>
+          <li className="text-lg">Inorganic Chemistry</li>
+          <li className="text-lg">Biochemistry</li>
+        </ul> */}
       </div>
       <h2 className="text-3xl font-bold mb-4 text-gray-900">Faculty Members</h2>
 

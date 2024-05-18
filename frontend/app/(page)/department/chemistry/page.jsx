@@ -92,26 +92,28 @@ const page = () => {
   return (
     <PageLayout
       style={true}
-      title="Department Of Computer Science & Engineering"
-      bg="https://snu.edu.in/site/assets/files/14210/html-system-website-concept_1.1600x0.webp"
+      title="Department Of Chemistry"
+      bg="https://council.science/wp-content/uploads/2017/04/IUPAC-feature-image-512x256.jpg"
     >
       <div className=" p-8">
         <h2 className="text-3xl font-bold mb-4 text-gray-900">
           <div className="flex items-center">
             <div className="h-3 w-3 rounded-full bg-green-500 mr-5"></div>
-            <p> Goals and Objectives</p>
+            <p> Beauty of Chemistry</p>
           </div>
         </h2>
         <p className="text-lg mb-6 text-gray-800">
           The{" "}
           <strong class="font-semibold text-gray-850 dark:text-white">
-            Department of Computer Science and Engineering
+            Department of Chemistry
           </strong>{" "}
-          strives to inspire excellence in the creation, application, and
-          dissemination of knowledge in computer science and engineering through
-          comprehensive educational programs; research in collaboration with
-          industry, NGOs, and government; diffusion through scholarly
-          publications, and service to the national and international community.
+          at Sunamgonj Science and Technology University is dedicated to
+          excellence in education and research. Our mission is to advance
+          chemical knowledge, prepare the next generation of scientists with
+          comprehensive education and hands-on experience, and contribute to
+          societal progress through innovative research and public outreach, all
+          while fostering an inclusive, collaborative, and ethically responsible
+          environment.
         </p>
 
         <h2 className="text-3xl font-bold mb-4 text-gray-900">
@@ -122,22 +124,20 @@ const page = () => {
         </h2>
         <ul className="list-disc pl-8 mb-6 text-gray-800">
           <li className="text-lg">
-            To educate students in the fundamental principles of computer
-            science and the cutting-edge skills needed to solve the complex
-            problems of society.
+            To bring comprehensive understanding of chemistry principles,
+            empowering students to address multifaceted challenges.
           </li>
           <li className="text-lg">
-            To contribute to the development and progress of computer science,
-            and software and information technology, to provide innovative,
-            creative solutions for societal needs.
+            To drive innovation in chemical knowledge and research, offering
+            solutions to pressing societal issues.
           </li>
           <li className="text-lg">
-            To disseminate research through publications, public service, and
-            professional activities to impact society in a transformative way.
+            To share research outcomes via publications, public service, and
+            professional engagements, catalyzing societal transformation.
           </li>
         </ul>
 
-        <h2 className="text-3xl font-bold mb-4 text-gray-900">
+        {/* <h2 className="text-3xl font-bold mb-4 text-gray-900">
           <div className="flex items-center">
             <div className="h-3 w-3 rounded-full bg-green-500 mr-5"></div>
             <p> Academic Programs</p>
@@ -155,7 +155,7 @@ const page = () => {
             Master of Engineering in Computer Science and Engineering
           </li>
           <li className="text-lg">Master in Computer Applications</li>
-        </ul>
+        </ul> */}
         <h2 className="text-3xl font-bold mb-4 text-gray-900">
           <div className="flex items-center">
             <div className="h-3 w-3 rounded-full bg-green-500 mr-5"></div>
@@ -163,9 +163,9 @@ const page = () => {
           </div>
         </h2>
         <ul className="list-disc pl-8 mb-6 text-gray-800">
-          <li className="text-lg">Software Engineering</li>
-          <li className="text-lg">Artificial Intelligence</li>
-          <li className="text-lg">Information and Technology</li>
+          <li className="text-lg">Organic Chemistry</li>
+          <li className="text-lg">Inorganic Chemistry</li>
+          <li className="text-lg">Biochemistry</li>
         </ul>
       </div>
       <h2 className="text-3xl font-bold mb-4 text-gray-900">Faculty Members</h2>
