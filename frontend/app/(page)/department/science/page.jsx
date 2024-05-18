@@ -36,12 +36,21 @@ const page = () => {
             within our university and beyond.
           </p>
         </div>
-        <div className="md:col-span-1 mt-8 flex justify-center">
+        <div className="md:col-span-1 mt-8 flex justify-center relative">
           <img
-            className="w-48 h-56 object-cover bg-green-100 p-2 border border-slate-200 shadow-md rounded-md"
-            src="https://sstu.ac.bd/wp-content/uploads/2024/01/G-M-Shahidul-Alam_Reg_KUET.jpg"
+            className="w-50 h-50 object-cover bg-green-100 p-2 border border-slate-200 shadow-md rounded-md"
+            src="https://www.pust.ac.bd/includes/images/teachers/PUST_100035.jpg"
             alt=""
           />
+          <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent rounded-md flex items-end">
+            <div className="p-4">
+              <p className="text-white text-lg">
+                Dr. Harun-Or-Roshid
+                <br />
+                Dean, Faculty of Science
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
