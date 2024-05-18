@@ -291,7 +291,7 @@ function Navbar() {
                 <li>
                   <Link
                     className=" text-slate-900 hover:text-green-500 transition-all duration-100 ease-in-out  hover:bg-slate-50 flex items-center p-2"
-                    href="#"
+                    href="finance-committee"
                   >
                     <div className="flex items-center justify-center bg-white border border-slate-200 rounded shadow-sm h-7 w-7 shrink-0 mr-3">
                       <CgChevronDoubleRight className="fill-green-500" />
