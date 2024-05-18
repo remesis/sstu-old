@@ -1,4 +1,5 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
   "/(page)/department/cse/page": "app/(page)/department/cse/page.js",
   "/(page)/teachers/view/[username]/page": "app/(page)/teachers/view/[username]/page.js",
