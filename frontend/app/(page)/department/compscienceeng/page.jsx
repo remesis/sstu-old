@@ -38,12 +38,21 @@ const page = () => {
             globally.
           </p>
         </div>
-        <div className="md:col-span-1 mt-8 flex justify-center">
+        <div className="md:col-span-1 mt-8 flex justify-center relative">
           <img
-            className="w-48 h-56 object-cover bg-green-100 p-2 border border-slate-200 shadow-md rounded-md"
-            src="https://sstu.ac.bd/wp-content/uploads/2024/01/G-M-Shahidul-Alam_Reg_KUET.jpg"
+            className="w-50 h-50 object-cover bg-green-100 p-2 border border-slate-200 shadow-md rounded-md"
+            src="https://sstu.ac.bd/wp-content/uploads/2024/01/1674212931820-240x300.jpg"
             alt=""
           />
+          <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent rounded-md flex items-end">
+            <div className="p-4">
+              <p className="text-white text-lg">
+                Prof. Dr. Md. Abu Naim Sheikh
+                <br />
+                Dean, Faculty of Computer Science and Engineering
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="p-8">
