@@ -1,11 +1,14 @@
-// components/SyndicateList.jsx
 import React from "react";
 import SyndicateCard from "../component/SyndicateCard";
 import PageLayout from "../component/PageLayout";
 
-const SyndicateList = () => {
+const page = () => {
   return (
-    <PageLayout title="Syndicate Members" bg="logo.png" style={true}>
+    <PageLayout
+      title="Syndicate Members"
+      bg="https://img.freepik.com/free-vector/3d-abstract-background-with-paper-cut-shape-colorful-green-carving-art_1217-4066.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1714003200&semt=ais"
+      style={true}
+    >
       <div className="py-8">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold mb-6 text-center">The Syndicate</h2>
@@ -22,8 +25,8 @@ const SyndicateList = () => {
 const members = [
   {
     name: "Prof. Dr. Md Abu Naim Sheikh",
-    title: "Vice-Chancellor",
-    department: "",
+    title: "Chairman",
+    department: "Vice-Chancellor",
     university: "Sunamgonj Science and Technology University",
     imageUrl:
       "https://sstu.ac.bd/wp-content/uploads/2024/01/1674212931820-240x300.jpg",
@@ -90,4 +93,4 @@ const members = [
   },
 ];
 
-export default SyndicateList;
+export default page;
