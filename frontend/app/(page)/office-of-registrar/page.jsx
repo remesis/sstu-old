@@ -4,7 +4,11 @@ import PageLayout from "../component/PageLayout";
 const OfficeofRegister = () => {
   return (
     <div>
-      <PageLayout title="Office of the Registrar" bg="logo.png" style={true}>
+      <PageLayout
+        title="Office of the Registrar"
+        bg="https://img.freepik.com/free-vector/3d-abstract-background-with-paper-cut-shape-colorful-green-carving-art_1217-4066.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1714003200&semt=ais"
+        style={true}
+      >
         <div className="bg-white p-6  rounded-md">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
             <div className="md:col-span-1 flex justify-center">

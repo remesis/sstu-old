@@ -6,7 +6,7 @@ const OfficeofVC = () => {
     <div>
       <PageLayout
         title="Office of the Vice-Chancellor"
-        bg="logo.png"
+        bg="https://img.freepik.com/free-vector/3d-abstract-background-with-paper-cut-shape-colorful-green-carving-art_1217-4066.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1714003200&semt=ais"
         style={true}
       >
         <div className="bg-white p-6  rounded-md">
