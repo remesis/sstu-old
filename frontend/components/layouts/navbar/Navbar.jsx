@@ -577,9 +577,9 @@ function Navbar() {
           </Link>
         </li>
         <li className="p-4 lg:px-2">
-          <Link
+        <Link
             className=" hover:text-green-500 transition-all duration-100 ease-in-out"
-            href="/contact-us"
+            href="#"
           >
             Notices
           </Link>
