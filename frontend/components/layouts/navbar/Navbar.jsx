@@ -30,8 +30,8 @@ function Navbar() {
     <div
       className={`flex z-[999999999999] justify-between items-center py-3 fixed top-0 w-full ${
         scrolling
-          ? "bg-white text-gray-900 shadow-md transition-all duration-300"
-          : "bg-transparent text-white transition-all duration-300"
+          ? "bg-green-500 text-gray-900 shadow-md transition-all duration-300"
+          : "bg-transparent text-white transition-all duration-300 "
       }`}
     >
       <div className="relative">
@@ -40,14 +40,15 @@ function Navbar() {
             <img src="/logo.png" alt="logo" width={100} />
           </Link>
         </div>
-        <div className="text-xl px-4 py-4 fixed top-[10px] left-[140px]">
-          সুনামগঞ্জ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়
+        <div className="text-3xl px-4 py-4 fixed top-[10px] left-[140px]">
+          {/* সুনামগঞ্জ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় */}
+          Shunamganj Science & Technology University
         </div>
       </div>
-      <ul className="flex flex-wrap justify-center items-center font-medium text-sm px-4">
+      <ul className="flex flex-wrap justify-center items-center font-medium text-lg px-4">
         <li className="p-4 lg:px-2">
           <Link
-            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            className=" hover:text-white transition-all duration-100 ease-in-out"
             href="/"
           >
             Home
@@ -60,7 +61,7 @@ function Navbar() {
           onMouseLeave={() => setOpen(false)}
         >
           <Link
-            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            className=" hover:text-white transition-all duration-100 ease-in-out"
             href="#0"
             aria-expanded={open}
           >
@@ -169,7 +170,7 @@ function Navbar() {
           onMouseLeave={() => setOpen2(false)}
         >
           <Link
-            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            className=" hover:text-white transition-all duration-100 ease-in-out"
             href="#0"
             aria-expanded={open}
           >
@@ -385,7 +386,7 @@ function Navbar() {
           onMouseLeave={() => setOpen3(false)}
         >
           <Link
-            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            className=" hover:text-white transition-all duration-100 ease-in-out"
             href="#0"
             aria-expanded={open}
           >
@@ -496,7 +497,7 @@ function Navbar() {
           onMouseLeave={() => setOpen4(false)}
         >
           <Link
-            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            className=" hover:text-white transition-all duration-100 ease-in-out"
             href="#0"
             aria-expanded={open}
           >
@@ -570,15 +571,15 @@ function Navbar() {
         </li>
         <li className="p-4 lg:px-2">
           <Link
-            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            className=" hover:text-white transition-all duration-100 ease-in-out"
             href="/contact-us"
           >
             Research
           </Link>
         </li>
         <li className="p-4 lg:px-2">
-        <Link
-            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+          <Link
+            className=" hover:text-white transition-all duration-100 ease-in-out"
             href="#"
           >
             Notices
@@ -586,7 +587,7 @@ function Navbar() {
         </li>
         <li className="p-4 lg:px-2">
           <Link
-            className=" hover:text-green-500 transition-all duration-100 ease-in-out"
+            className=" hover:text-white transition-all duration-100 ease-in-out"
             href="/contact-us"
           >
             Contact Us
